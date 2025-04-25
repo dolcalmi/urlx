@@ -103,7 +103,6 @@ describe('lnd service', () => {
     await expect(lnd.payInvoice(pr, 1000)).rejects.toEqual(failedPayment);
   });
 
-  // Tests for trackPayment
   describe('trackPayment', () => {
     it('should track a payment successfully', async () => {
       const successfulPayment = {
